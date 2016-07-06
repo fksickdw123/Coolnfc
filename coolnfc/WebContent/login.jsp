@@ -12,6 +12,10 @@
 
 	if(Bean.logink(Memo)){
 		session.setAttribute("id",id);
+
+
+	if(Bean.logink(Memo)){
+
 		pageContext.forward("sight.jsp");
 	}
 		else{

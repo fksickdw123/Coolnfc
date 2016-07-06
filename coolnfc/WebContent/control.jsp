@@ -55,10 +55,12 @@ if(action.equals("list")){
 		 throw new Exception("DB 삭제 오류");
 	 
  	}
+
  	else if(action.equals("logout")){
  		session.invalidate();
  		 response.sendRedirect("loginsight.jsp");
  	}
+
 
  else{
  }

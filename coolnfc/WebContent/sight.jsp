@@ -18,7 +18,7 @@
 
 	try{
 		id = (String)session.getAttribute("id");            // request에서 id 파라미터를 가져온다
-		System.out.println("-----"+id)
+		System.out.println("-----"+id);
 		if(id==null||id.equals("")){                            // id가 Null 이거나 없을 경우
 			response.sendRedirect("loginsight.jsp");    // 로그인 페이지로 리다이렉트 한다.
 		}
@@ -54,7 +54,34 @@
           <ul>
           
             <li><a href=sight.jsp title="Go to Start page">Home</a></li>
-            <input type=submit value="로그아웃">																	
+            <input type=submit value="로그아웃">
+  <!-- Main Page Container -->
+  <div class="page-container">
+ 
+   <!-- Implement this header in your Multiflex-3 Basic or Full Layout:                        -->
+   <!-- 1. Copy the marked rows below                                                          -->
+   <!-- 2. Paste and replace marked rows in "layoutNN_basic.html" or "layoutNN_full.html" file -->
+   <!-- 3. Open CSS-file "header3_setup.css", and follow its instructions                      -->
+
+   <!-- START COPY here -->
+
+    <!-- A. HEADER -->      
+    <div class="header">
+      
+      <!-- A.1 HEADER TOP -->
+      <div class="header-top">
+        
+        <!-- Sitelogo and sitename -->
+        <a class="sitelogo" href="#" title="Go to Start page"></a>
+        <div class="sitename">
+          <h1><img src="http://cfile2.uf.tistory.com/image/273BDD3A5779F1271D7DEA" height="50" width="55"><span style="font-weight:normal;font-size:50%;"></span></h1>
+        </div>			
+		
+        <!-- Navigation Level 1 -->
+        <div class="nav1">
+          <ul>
+            <li><a href=sight.jsp title="Go to Start page">Home</a></li>																		
+>>>>>>> refs/remotes/origin/master
           </ul>
         </div>              
       </div>
